@@ -1,0 +1,75 @@
+:root{
+  --primary-text-color:rgba(0,0,0,0.8);
+  --title-text-color: #000000;
+  --accent-color: #18a0fb;
+  --primary-white-color: #ffffff;
+}
+
+body{
+  color: var(--primary-text-color);
+  background-color: #fff;
+}
+h1,h2,h3,h4,h5,h6{
+  color: var(--title-text-color);
+}
+.logo{
+  color: var(--title-text-color) ;
+}
+.logo:hover{
+  --new-accent: red;
+  color: var(--new-accent);
+}
+.list{
+  list-style: none;
+}
+/* Site nav */
+.site-nav .link {
+  color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav.link:focus{
+  color: var(--title-text-color);
+}
+.site-nav .link.current{
+  color: var(--title-text-color);
+}
+/* Hero */
+.hero-title{
+  color: var(--title-text-color);
+}
+/* Section */
+.section-title{
+  color: var(--title-text-color);
+}
+.clients > .section-title {
+  color: teal;
+}
+/* Features */
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+/* Examples */
+.work-list .title{
+  color: var(--title-text-color);
+}
+/* Button */
+.button{
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+  font-size: 24px;
+  padding: 12px 24px;
+  display: inline-block;
+  border: 1px solid black;
+}
+.button.primary{
+   color: var(--primary-white-color );
+  background-color: var(--accent-color);
+border-color: transparent; 
+}
+ .button.secondary{
+  color: var(--accent-color);
+  background-color: var(--primary-white-color );
+  border-color:var(--accent-color); 
+  border-radius:3%;
+}
